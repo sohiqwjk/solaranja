@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: #FFB199;
+    font-size: 20px;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    place-items: center;
+}
+.solaranja>a{
+    color: #D86D5E;
+    font-size: 50px;
+    text-decoration: none;
+}
+.pesquisar::before{
+    background-image:url(imagens/lupa.png);
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 3vh;
+    position: relative;
+    left: 5px;
+}
+.pesquisar{
+    background-color: #EB744F;
+    width: 170px;
+    height: 30px;   
+}
+.pesquisar>a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: 20px; 
+}
+.menu{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.menu>ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+header>div>ul>li{
+    padding: 0 50px;
+    position: relative;
+    right: 80px;
+}
+header>div>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.pedidos{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(14, 60px);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 78px);
+}
+.pedidos>div{
+    background-color: #FFEAE4;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 15;
+}
+.seuspedidos{
+    color: #FF3B00;
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    place-self: center;
+    font-size: 35px;
+    font-family: "Inria Serif", serif;
+}
+.opcoes{
+    grid-column-start: 8;
+    grid-column-end: 10 ;
+    grid-row: 1/2;
+    place-self: center;
+    font-size: 22px;
+}
+.abrir{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    grid-column: 8/10;
+    grid-row: 1/2;
+    position: relative;
+    left: 271px;
+    top: 20px;
+}
+.opcoes::after{
+    background-image:url(imagens/sinal-de-seta-para-baixo-para-navegar.png);
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 2vh;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+.pedido1{
+    background-color: white;
+    border: 1px solid;
+    border-color:#FF3B00;
+    grid-column: 2 / 9;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.nomeproduto{
+    grid-column: 3 / 5;
+    font-weight: 400;
+    font-family: "Inria Serif", serif;
+    font-size: 32px;
+    margin: 0;
+}
+.descrição{
+    font-size: 15px;
+    grid-column: 3 / 12;
+}
+.preço{
+    color: #FF3B00;
+    grid-column: 3/5;
+    font-size: 32px;
+}
+.pedido2{
+    background-color: white;
+    border: 1px solid;
+    border-color:#FF3B00;
+    grid-column: 2 / 9;
+    grid-row: 5 / 7;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.pedido3{
+    background-color: white;
+    border: 1px solid;
+    border-color:#FF3B00;
+    grid-column: 2 / 9;
+    grid-row: 8 / 10;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}

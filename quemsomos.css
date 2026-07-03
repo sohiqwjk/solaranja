@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: #FFB199;
+    font-size: 20px;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    place-items: center;
+}
+.solaranja>a{
+    color: #D86D5E;
+    font-size: 50px;
+    text-decoration: none;
+}
+.pesquisar::before{
+    background-image:url(imagens/lupa.png);
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 3vh;
+    position: relative;
+    left: 5px;
+}
+.pesquisar{
+    background-color: #EB744F;
+    width: 170px;
+    height: 30px;   
+}
+.pesquisar>a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: 20px; 
+}
+.menu{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.menu>ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+header>div>ul>li{
+    padding: 0 50px;
+    position: relative;
+    right: 80px;
+}
+header>div>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, 94px);
+}
+.container{
+    background-color: #FFEAE4;
+    grid-column: 2/13;
+    grid-row: 2/9;
+    display: grid;
+    grid-template-columns: repeat(15, 77px);
+    grid-template-rows: repeat(11, 60px);
+}
+img{
+    height: 30vh;
+}
+.titulo{
+    color: #FF3B00;
+    font-weight: 400;
+    font-family: "Inria Serif", serif;
+    font-size: 30px;
+    grid-column: 5/13;
+    grid-row: 2;
+}
+.txt1{
+    grid-column: 5/16;
+    grid-row: 3/5;
+    font-size: 20px;
+}
+.txt2{
+    grid-column: 2/16;
+    grid-row: 6/8;
+    font-size: 20px;
+}
+.txt3{
+    grid-column: 2/16;
+    grid-row: 9/11;
+    font-size: 20px;
+}

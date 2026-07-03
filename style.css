@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background-color: #FFB199;
+    font-size: 20px;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 100%);
+    place-items: center;
+}
+.solaranja>a{
+    color: #D86D5E;
+    font-size: 50px;
+    text-decoration: none;
+}
+.pesquisar::before{
+    background-image:url(imagens/lupa.png);
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 3vh;
+    position: relative;
+    left: 5px;
+}
+.pesquisar{
+    background-color: #EB744F;
+    width: 170px;
+    height: 30px;   
+}
+.pesquisar>a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -8px;
+    left: 20px; 
+}
+.menu{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+.menu>ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+header>div>ul>li{
+    padding: 0 50px;
+    position: relative;
+    right: 80px;
+}
+header>div>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(14, 60px);
+}
+main>.destaque{
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background-color:#EB744F;
+}
+main>.destaque>h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    
+    padding: 20px 10%;
+    line-height: 0%;
+}
+main>.produtos{
+    background-color: #FFEAE4;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 8;
+    grid-row-end: 15;
+}
